@@ -1,0 +1,76 @@
+.container-signUp,
+.container-login {
+	background: linear-gradient(45deg, #FC466B, #3F5EFB);
+	height: 100vh;
+
+	.signUp,
+	.login {
+		background: rgba(255, 255, 255, .3);
+		padding: 3rem;
+		max-width: 500px;
+		height: auto;
+		border-radius: 20px;
+		border-left: 1px solid rgba(255, 255, 255, .3);
+		border-top: 1px solid rgba(255, 255, 255, .3);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+		box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+		text-align: center;
+
+		color: white;
+		font-weight: 500;
+		opacity: .7;
+
+		h2 {
+			font-family: 'Baloo Tammudu 2', cursive;
+			font-size: 400;
+		}
+
+		input,
+		Button {
+			background: transparent;
+			outline: none;
+			border: none;
+			border-left: 1px solid rgba(255, 255, 255, .3);
+			border-top: 1px solid rgba(255, 255, 255, .3);
+			padding: 1rem;
+			width: 200px;
+			border-radius: 50px;
+			backdrop-filter: blur(5px);
+			-webkit-backdrop-filter: blur(10px);
+			box-shadow: 4px 4px 60px rgba(0, 0, 0, .2);
+			color: white;
+			font-weight: 500;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+			transition: all .3s;
+			margin-bottom: 2em;
+
+			&[type="text"]:focus,
+			&[type="email"]:focus,
+			&[type="password"]:focus {
+				background: rgba(255, 255, 255, 0.1);
+				box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+			}
+
+			&[type="submit"] {
+				width: 150px;
+				height: 45px;
+				cursor: pointer;
+			}
+
+			&::placeholder {
+				color: #fff;
+			}
+		}
+
+	}
+}
+
+.container-signUp {
+	height: auto;
+}
+
+.errors {
+	color: red;
+	font-weight: bold;
+}
